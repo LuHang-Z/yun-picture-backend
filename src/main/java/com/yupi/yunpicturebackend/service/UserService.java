@@ -7,7 +7,6 @@ import com.yupi.yunpicturebackend.model.entity.User;
 import com.yupi.yunpicturebackend.model.vo.LoginUserVO;
 import com.yupi.yunpicturebackend.model.vo.UserVO;
 
-import javax.jws.soap.SOAPBinding;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
