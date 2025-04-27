@@ -10,6 +10,7 @@ import com.yupi.yunpicturebackend.model.vo.PictureVO;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * @author zlh13
@@ -122,4 +123,13 @@ public interface PictureService extends IService<Picture> {
      */
     void editPicture(PictureEditRequest pictureEditRequest, User loginUser);
 
+    /**
+     * 根据颜色搜索图片
+     *
+     * @param spaceId
+     * @param picColor
+     * @param loginUser
+     * @return
+     */
+    List<PictureVO> searchPictureByColor(Long spaceId, String picColor, User loginUser);
 }
